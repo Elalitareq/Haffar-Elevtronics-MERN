@@ -11,7 +11,6 @@ connectDB()
 let port= process.env.PORT ||5000
 dotenv.config()
 const app = express();
-connectDB();
 
 dotenv.config();
 
