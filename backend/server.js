@@ -36,7 +36,7 @@ app.use(function(err, req, res, next) {
 app.use('/api/users',userRouter)
 app.use('/api/products',productRouter)
 app.use('/api/services',serviceRouter)
-
+app.use('/uploads', express.static('uploads'))
 app.use('*', (req,res) => {
   res.status(404).send({message: '404 Not Found'})
 })
